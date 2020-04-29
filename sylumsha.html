@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1"/>
+    
+	<title>Homepage - ZTzTopia</title>
+    <meta name="description" content="Ini adalah website yang saya buat untuk membagikan tools yang ada di game minecraft, growtopia, etc."/>
+    <meta name="keywords" content="ZTzTopia, Shader, Program"/>
+    <meta name="author" content="ZTzTopia">
+    	
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+	<link rel="manifest" href="/images/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <meta http-equiv="content-language" content="en-us">
+    <meta name="revisit-after" content="1 day" />
+       
+    <!-- Stylesheet -->
+    <script>    	
+		/*! loadCSS. [c]2020 Filament Group, Inc. MIT License */
+		(function(w){
+			"use strict";
+			var loadCSS = function(href, before, media, attributes) {
+				var doc = w.document;
+				var ss = doc.createElement("link");
+				var ref;
+				if(before) ref = before;
+				else {
+					var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+					ref = refs[refs.length - 1];
+				}
+		
+				var sheets = doc.styleSheets;
+				if(attributes) {
+					for(var attributeName in attributes) {
+						if(attributes.hasOwnProperty(attributeName)) {
+							ss.setAttribute(attributeName, attributes[attributeName]);
+						}
+					}
+				}
+				
+				ss.rel = "stylesheet";
+				ss.href = href;
+				ss.media = "only x";
+		
+				function ready(cb) {
+					if(doc.body) return cb();
+					setTimeout(function(){
+						ready(cb);
+					});
+				}
+				
+				ready(function() {
+					ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
+				});
+				
+				var onloadcssdefined = function(cb) {
+					var resolvedHref = ss.href;
+					var i = sheets.length;
+					while(i--){
+						if(sheets[i].href === resolvedHref) return cb();
+					}
+					setTimeout(function() {
+						onloadcssdefined(cb);
+					});
+				};
+
+				function loadCB() {
+					if(ss.addEventListener) ss.removeEventListener('load', loadCB );
+					ss.media = media || "all";
+				}
+	
+				if(ss.addEventListener) ss.addEventListener('load', loadCB);
+				ss.onloadcssdefined = onloadcssdefined;
+				onloadcssdefined(loadCB);
+				return ss;
+			};
+			
+			//commonjs
+			if(typeof exports !== "undefined") exports.loadCSS = loadCSS;
+			else w.loadCSS = loadCSS;
+		}(typeof global !== "undefined" ? global : this));
+    
+		loadCSS("/css/style.min.css");
+		loadCSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", null, null, {"crossorigin": "anonymous", "integrity": "sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="});
+		loadCSS("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", null, null, {"crossorigin": "anonymous", "integrity": "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"});
+		loadCSS("https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css", null, null, {"crossorigin": "anonymous", "integrity": "sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4="});
+	</script>
+	<noscript>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="css/style.css" rel="stylesheet">
+	</noscript>
+	
+    <!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@ztztopia">
+	<meta name="twitter:creator" content="@ztztopia">
+	<meta name="twitter:title" content="ZTzTopia">
+	<meta name="twitter:description" content="-.">
+	<meta name="twitter:image" content="/images/logo/logo-alt-3.png">
+	
+	<!-- Facebook -->
+	<meta property="og:url" content="https://ztztopia.github.io/">
+	<meta property="og:title" content="Homepage">
+	<meta property="og:description" content="-.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="/images/logo/logo-alt-3.png">
+	<meta property="og:image:secure_url" content="/images/logo/logo-alt-3.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+</head>
+
+<body>
+	
+	<!-- Navbar -->
+    <div class="navigation-wrap navbar-light bg-light start-navbar start-style">
+    	<div class=container>
+            <div class=row>
+                <div class=col-12>
+                    <nav class="navbar navbar-expand-md">
+                        <a class=navbar-brand href="/"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src=/images/logo/logo-alt-3.png alt=""></a>
+                        <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+                            <i class="fa navbar-toggler-icon"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id=navbarSupportedContent>
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <span class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="/"><i class="fa fa-home nav-icon"></i>Home</a>
+                                </span>
+                                <span class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link dropdown-toggle" data-toggle=dropdown role=button aria-haspopup=true aria-expanded=false><i class="fa fa-tools nav-icon"></i>Tools</a>
+                                    <div class=dropdown-menu>
+                                        <a class=dropdown-item href=growtopia>Growtopia</a>
+                                        <a class=dropdown-item href=minecraft>Minecraft</a>
+                                        <a class=dropdown-item href=#>-</a>
+                                        <a class=dropdown-item href=#>-</a>
+                                    </div>
+                                </span>
+                                <span class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class=nav-link href="sylumsha.html"><i class="fa fa-download nav-icon"></i>Download</a>
+                                </span>
+                                <span class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class=nav-link href="#"><i class="fa fa-sign-in-alt nav-icon"></i>Sign up</a>
+                               </span>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section -->
+    <div class="container-2">
+    	<div class="wrapper aside-grid">
+		    <div class=section>
+				<div class=section-body>
+					<div id="alert-above-section"></div>
+					<h1 class=post-tittle>Sylum Shaders - Official release</h1>
+					<a>Sylum Shaders is a shader pack made to change your gameplay looks, like the tone of the blocks, the new sky render, new clouds render, realistic shadow and much more!</a>
+			        <div class="mt-2 mb-2">
+						 <div class="youtube-player" data-id="Wp4PdEyDPHg" data-related="0" data-control="0" data-info="0" data-fullscreen="1"> 
+							<img class=youtube-thumbnail src="https://i.ytimg.com/vi/Wp4PdEyDPHg/hqdefault.jpg" alt="">
+							<div class=youtube-play-icon></div> 
+						</div>
+					</div>
+					<h4>Features</h4>
+			        <div>
+						<ul class=check>
+							<li>Coloring to lighting.</li>
+							<li>Dynamic shadow.</li>
+							<li>The leaves are moving now.</li>  
+							<li>The sun and moon are no longer squares.</li>
+							<li>The sky and clouds are more realistic.</li>  
+							<li>Now there are more stars at night.</li>
+							<li>Tonemapping.</li>
+						</ul>   
+					</div>
+					<h4>Supported platforms</h4>
+			        <div>
+						<ul>
+							<li>Android</li>
+							<li>iOS</li>
+							<li>Status: <span class=text-green>Tested on Samsung A7 2018.</span></li>
+						</ul> 
+					</div>
+					<h4>Instalation</h4>
+					<div>
+						<b>Android, old iOS (Auto install)</b>
+						<ol>
+							<li>Download the .mcpack file.</li>
+							<li><span class=text-primary-web>Click</span> the .mcpack file after download.</li>
+							<li>enjoy.</li>
+						</ol>
+						<b>Android, iOS 13.0 & 13.2 (Manual install)</b>
+						<ol>
+							<li>Download the .zip file.</li>
+							<li>Extract the .zip file.</li>
+							<li>After you extract the file move the folder <span class=text-primary-web>Sylum Shader</span> to <span class=text-primary-web>games/com.mojang/resource pack/</span>.</li>
+							<li>enjoy.</li>
+						</ol>
+					</div>
+					<h4>How to download</h4>
+					<div>
+						<ol>
+							<li>Click the link below to download.</li>
+							<li>Wait for the page to finish loading</a></li>
+							<li><span class=text-primary-web>Click on I'm Not a Robot (reChapta) and click continue/get link.</span></li>
+							<li><span class=text-primary-web>Wait 5-15 seconds and click continue/get link.</span></li>
+							<li>Select version do you want to download.</li>
+							<li>There are 2 files namely mcpack and zip, select one and download.</li>
+						</ol>
+					</div>
+					<h4>Download</h4>
+					<div class=ml-4>
+						<i class="fa fa-download nav-icon"></i><strong>Sylum shader: <a href="">Download!</a></strong>
+			     	</div>
+				</div>
+			</div>
+			
+			<!-- Aside -->
+			<div class=aside>
+				<div class=aside-body>
+					<div class="social-media bg-primary-grad">
+						<span class=social-text>Social Media</span>
+						<div class="social-btn mt-2">
+							<a class="s-btn" href=https://github.com/ZTzTopia target=_blank><i class="fab fa-github"></i></a>
+							<a class="s-btn" href=https://twitter.com/ztztopia target=_blank><i class="fab fa-twitter"></i></a>
+							<a class="s-btn" href=#><i class="fab fa-discord"></i></a>
+							<a class="s-btn" href=https://wa.me/62895332327823 target=_blank><i class="fab fa-whatsapp"></i></a>
+						</div>
+					</div>
+					<div class=mt-4>
+						<a class="twitter-timeline" href="https://twitter.com/mcpedl" data-width="auto" data-height="350">Tweets by Twitter Api</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class=footer>
+		<svg class="svg-dark mb--1px rotate-180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1440 156" xml:space="preserve">
+			<path d="M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,80C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"/>
+		</svg>
+		<div class="footer-element bg-dark-alt">
+			<div class=footer-body>
+				<div class=container-fluid>
+					<div class="row gap-y">
+						<div class="col-6 col-md">
+			            	<div class=footer-link>
+			                	<h6 class=footer-title>Company</h6>
+			                     	<ul>
+			                        <li><a href="#">About</a></li>
+			                        <li><a href="#">Contact</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+					</div>
+				</div>
+			</div>
+			<div class=footer-copyright-body>
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<a>Made with <i class="fa fa-heart text-red"></i> & <i class="fa fa-mobile-alt text-blue"></i> in Indonesia</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<a class=footer-copyright><i class="fa fa-copyright"></i> ZTzTopia <script>document.write(new Date().getFullYear())</script></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Back to top button -->
+	<a class="back-to-top-btn" title="Back to top" onclick=backToTop()><i class="fa fa-sort-up back-to-top-icon"></i></a>
+	
+	<!-- Javascript -->
+	<script>
+		/*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+		(function(w){
+			var loadJS = function(src, cb, ordered, attributes) {
+				"use strict";
+				var tmp;
+				var ref = w.document.getElementsByTagName("script")[0];
+				var script = w.document.createElement("script");
+		
+				if (typeof(cb) === 'boolean') {
+					tmp = ordered;
+					ordered = cb;
+					cb = tmp;
+				}
+	
+				if(attributes) {
+					for(var attributeName in attributes) {
+						if(attributes.hasOwnProperty(attributeName)) {
+							script.setAttribute(attributeName, attributes[attributeName]);
+						}
+					}
+				}
+				
+				script.src = src;
+				script.async = !ordered;
+				ref.parentNode.insertBefore(script, ref);
+		
+				if (cb && typeof(cb) === "function") script.onload = cb;
+				return script;
+			};
+			
+			//commonjs
+			if(typeof module !== "undefined") module.exports = loadJS;
+			else w.loadJS = loadJS;
+		}(typeof global !== "undefined" ? global : this));
+		
+		loadJS("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js", true, function() {
+			loadJS("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", true, null, {'crossorigin': 'anonymous', 'integrity':'sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'});
+			loadJS("/js/index.min.js", true);
+		}, {'crossorigin': 'anonymous', 'integrity':'sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n'});
+		loadJS("https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js", true, null, {'crossorigin': 'anonymous', 'integrity':'sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c='});
+	</script>
+</body>
+</html>
